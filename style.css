@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:25px;
+}
+
+.dashboard{
+    display:flex;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.card{
+    width:220px;
+    background:#4CAF50;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 8px 15px rgba(0,0,0,.15);
+}
+
+.card h2{
+    font-size:35px;
+}
+
+.form-container{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    margin-bottom:25px;
+}
+
+.form-container h2{
+    margin-bottom:15px;
+    color:#333;
+}
+
+form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+input,
+select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+    font-size:15px;
+}
+
+input:focus,
+select:focus{
+    border-color:#4CAF50;
+}
+
+button{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    cursor:pointer;
+    padding:12px;
+    border-radius:6px;
+    transition:.3s;
+    font-size:16px;
+}
+
+button:hover{
+    background:#388e3c;
+}
+
+.search-box{
+    margin-bottom:20px;
+}
+
+.search-box input{
+    width:100%;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table th{
+    background:#4CAF50;
+    color:white;
+    padding:14px;
+}
+
+table td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f2f2f2;
+}
+
+.edit-btn{
+    background:#2196F3;
+    margin-right:5px;
+}
+
+.edit-btn:hover{
+    background:#1976D2;
+}
+
+.delete-btn{
+    background:#f44336;
+}
+
+.delete-btn:hover{
+    background:#d32f2f;
+}
+
+.action-btn{
+    padding:8px 12px;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+table{
+    font-size:13px;
+}
+
+.card{
+    width:100%;
+}
+
+form{
+    grid-template-columns:1fr;
+}
+
+}
